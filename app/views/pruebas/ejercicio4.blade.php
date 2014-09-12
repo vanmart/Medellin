@@ -57,6 +57,7 @@
           <td><label id="">{{$porciones[0]}} </label></td>
           <td><label id="">{{$porciones[1]}} </label></td>
           <td><label id="">{{$porciones[2]}} </label></td>
+          <td><label id="">{{$porciones[3]}} </label></td>
           <!--<td><label id="datos_{{$seleccionado->id}}">{{$seleccionado->datos}}</label></td> -->
           <td><label id="2"></td>
       </tr>
