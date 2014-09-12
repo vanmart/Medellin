@@ -1,0 +1,1 @@
+C:\xampp\htdocs\Medellin\app/views/data_news/index.blade.php

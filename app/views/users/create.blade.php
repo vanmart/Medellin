@@ -36,6 +36,12 @@
 
 		{{ Form::submit('save') }} <a href="{{ URL::previous() }}">Go Back</a> {{ HTML::link('users','cancel') }}<br>
 		
+		<ul class="parsley-error-list">
+                  @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+                  @endforeach
+                </ul>
+
 	{{ Form::close() }} 
 
 @endsection

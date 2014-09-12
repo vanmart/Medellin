@@ -7,6 +7,8 @@
         <style>
             body {
             padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+            padding-left: 15px;
+            padding-right: 10px;
             }
         </style>
         {{ javascript_include_tag() }}
@@ -16,40 +18,49 @@
     </head>
  
     <body>
+    <div class="btn-group btn-group-vertical">
+
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <a class="brand" href="home">Medellin</a>
+                    <a class="brand" href="/">Medellin</a>
                     <div class="nav-collapse">
-                        <ul class="nav">
+                        <ul class="nav nav-tabs nav-stacked">
                             @section('navigation')
-                            <li class="active"><a href="home">Home</a></li>
+                            <li ><a href="/">Home</a></li>
                             @yield('navigation')
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
         </div>
+    </div>   
 
 
  
-        <div class="container-fluit">
+        <div class="container-fluit">                       
             <div class="hero-unit">
-                <div class="row"  >
-                    <div class="span6"  class="center-block">
-                        <h1 class="text-center">Welcome to Medellin!</h1><br>
-                        <p class="text-center">Vanmartc is a genius, family and friends too.</p>
-                        <p class="text-center">Wow them with your photo-filtering abilities!</p>
-                        <p class="text-center">Let them see what a great photographer you are!</p>
-                        <p class="text-center"><a href="about" class="btn btn-primary btn-large">Learn more &raquo;</a>
+                <div class="row-fluit"  >
+                    <div class="row-fluit" class="jumbotron" class="center-block" >
+                            <h1 class="text-center">Bienvenido!</h1><br>
+                            <img src="assets/wp.jpg" class="img-rounded"  class="img-responsive" alt="Responsive image" />
+                        </div>
+                    <div class="jumbotron"  class="center-block">
+                        
+                        
+                        <p class="text-center"><a href="/ejercicio1" class="btn btn-primary btn-large">Continar</a>
                             <span class="glyphicon glyphicon-search"></span>
                         </p>
+                        
                     </div>
-                     
-                    <div class="span4">
-                        <img src="assets/medellin.jpg" class="img-responsive" alt="Responsive image" />
-                    </div>
+                    
+
+
+                    
+                    
+
                 </div>
+
             </div>  
             @yield('content')
             <hr>

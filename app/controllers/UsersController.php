@@ -50,6 +50,7 @@ class UsersController extends \BaseController {
                 'email' => 'required|email|max:150',
                 'nickname'=>'required|min:3|max:50',
                 'password' => 'required|min:8',
+                //añadir la validacion mime:jpg.bmp,   etc para el archivo de la  foto 
             );
 		$messages = array(
             'required'  => ':attribute can not be empty.',

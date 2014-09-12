@@ -7,23 +7,26 @@
         <style>
             body {
             padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+            padding-left: 30px;/* para organizar problema de bootstrap */
+            padding-right: 10px;
             }
         </style>
         {{ javascript_include_tag() }}
+
+        <!-- PARA QUE TENGA EN CUENTA LAS RESOLUCIONES-->
         <meta name="viewport" content="width=device-width, initial-scale=1" maximum-sacale=1  user-scalable=no>
 
     </head>
  
-    <body
-    padding-top: 60px;>
+    <body>
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <a class="brand" href="home">Medellin</a>
+                    <a class="brand" href="/">Medellin</a>
                     <div class="nav-collapse">
                         <ul class="nav">
                             @section('navigation')
-                            <li class="active"><a href="home">Home</a></li>
+                            <li class="active"><a href="/">Home</a></li>
                             @yield('navigation')
                             
                         </ul>
